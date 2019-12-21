@@ -1,0 +1,162 @@
+ body {
+    margin: 0;
+    padding: 0;
+    height:100vh; 
+    overflow:hidden;
+    background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.911) 50%,
+      rgb(59, 163, 151));
+    background-size: covre;
+    background-position: top;
+}
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+header .logo {
+    margin-left: 10vw;
+    margin-top: 4vh;
+    width: 260px;
+    line-height: 30px;
+    float: left;
+    font-weight: bold;
+}
+
+header .user {
+    top: 4vh;
+    right: 6vw;
+    float: right;
+    border-radius: 20px;
+    background-color: none;
+} 
+
+.content {
+    margin-top: 25vh;
+    position: absolute;
+    color: #FF4940;
+}
+
+.user .profileImage {
+    width: 50px;
+}
+
+.user .userName {
+    color: #4FC0C6;
+    padding: 10px;
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 500;
+    font-size: 21px;
+}
+
+.content .intro {
+    margin-left: 11vw;
+    position: absolute;
+}
+
+.content .intro .big-heading {
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 500;
+    text-align: left;
+    width: 600px;
+    margin-top: 7%;
+}
+
+.content .intro .small-heading {
+    padding-top: 25px;
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 100;
+    font-size: 1.2rem;
+    text-align: left;
+    width: 580px;
+}
+
+
+.intro .startImage {
+    width: 200px;
+    position: static;
+    padding: 0;
+    margin-top: 8%;
+}
+
+.intro .start-button {
+    padding-left: 0px;
+    background: transparent;
+    border: none;
+}
+
+.content .monitorImage {
+    position: absolute;
+    margin-left: 50vw;
+    width: 350px;
+    margin-top: -15px;
+}
+
+
+
+@media (max-width: 1270px) {
+
+    body {
+        overflow: visible;
+    }
+
+    header .logo {
+        margin-left: 7vw;
+        width: 230px;
+    }
+
+    .profileImage {
+        top: 33px;
+        width: 35px;
+    }
+
+    .content {
+        top: -70px;
+        text-align: center;
+    }
+    
+    .content .monitorImage {
+
+        position: absolute;
+        width: 680px;
+        transform: translate(-50%);
+        margin-top: -30px;
+    }
+
+    .monitorImage img   {
+        width: 530px;
+    }
+
+    .content .intro {
+        top: 370px;
+        right: 0px;
+        left: 0px;
+        margin: 0;
+    }
+    
+    .content .intro .big-heading {
+        text-align: center;
+        width: 100vw;
+        font-size: 2.1rem;
+    }
+
+    .content .intro .small-heading {
+        text-align: center;
+        width: 100vw;
+        padding: 15px;
+        padding-top: 0;
+        padding-bottom: 0;
+        font-size: 1.1rem;
+    }    
+    .intro .startImage {
+        width: 190px;
+        margin-top: 0;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+}
